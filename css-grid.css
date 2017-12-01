@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "footer footer";
+    grid-template-rows: 125px 1fr 100px;
+    grid-template-columns: 1fr 350px;
+}
+
+header, footer, aside, section {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    height: 100vh;
+    color: white;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightgray;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.safari {
+    background-color: darkblue;
+}
+
+.chrome {
+    background-color: darkred;
+}
+
+.firefox {
+    background-color: darkgoldenrod;
+}
+
+.edge {
+    background-color: darkgreen;
+}
